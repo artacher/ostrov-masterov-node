@@ -1,0 +1,1 @@
+body.dark{background:black;color:#f0f0f0;transition:background-color 300ms ease-in-out}body.dark .btn-color{background:white url(/img/icons/icon-sun.svg)}body.dark .inverted{filter:invert(100%)}
