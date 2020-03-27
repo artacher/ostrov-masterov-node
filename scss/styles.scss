@@ -44,17 +44,20 @@ h1, h2, h3, h4 {
 }
 
 .btn-nav {
-  display: block;
+  display: inline-flex;
   height: 45px;
   font-family: 'Prata', serif;
   font-size: 18px;
   border: 1px solid black;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255,255,255,0);
   color: black;
   border-radius: 25px;
   margin: 0px 7px;
-  padding: 0 15px;
-  line-height: 45px;
+  padding: 0px 15px;
+  line-height: 1;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
 
   &:hover {
     text-decoration: none;
