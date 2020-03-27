@@ -9,6 +9,7 @@
     "serverstart": "DEBUG=simple-express-site:* npm run devstart"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "cookie-parser": "~1.4.5",
     "debug": "~4.1.1",
     "express": "~4.17.1",

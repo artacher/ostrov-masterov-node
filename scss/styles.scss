@@ -1,9 +1,239 @@
-body {
-  background-color: beige;
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-a {
-  color: #00B7FF;
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Prata', 'Times New Roman', sans-serif;
+}
+
+.boxmenu {
+  display: flex;
+  padding-top: 59px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .boxmenu {
+      padding-top: 10px;
+  }
+}
+
+.boxmenu .navone {
+  display: flex;
+  margin-left: 30px;
+}
+
+.boxmenu .navtwo {
+  display: flex;
+  margin-left: auto;
+  margin-left: 40px;
+}
+
+/* .logo {
+  padding-left: 20px;
+  padding-bottom: 30px;
+} */
+
+.btn-nav {
+  display: block;
+  height: 45px;
+  font-family: 'Prata', serif;
+  font-size: 18px;
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0);
+  color: black;
+  border-radius: 25px;
+  margin: 0px 7px;
+  padding: 0 15px;
+  line-height: 45px;
+
+  &:hover {
+    text-decoration: none;
+    color: darkgrey;
+  }
+}
+
+.btn-circle {
+  width: 45px;
+  padding: 0;
+}
+
+.btn-color {
+  width: 45px;
+  height: 45px;
+  background: black;
+  border-radius: 25px;
+  margin: 0px 30px 0px 7px;
+}
+
+.isle {
+  margin-left: 50px;
+  width: 340px;
+  }
+
+.isle-img {
+  width: 410px;
+}
+
+.empty-box {
+  width: 100%;
+}
+
+.top-section {
+  background: url(../img/isle.gif) 10px top no-repeat;
+  padding-top: 46px;
+}
+
+.top-section .headings {
+  display: inline-block;
+  width: calc(100% - 440px);
+}
+
+
+@media (max-width: 1240px) {
+  .headings .isle-title {
+      font-size: 120px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .top-section {
+      background: none;
+  }
+  
+  .top-section .headings {
+      display: inline-block;
+      width: 100%;
+  }
+
+  .headings .isle-title,
+  .headings .isle-title-text {
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-section .headings {
+      width: 100%;
+  }
+  .headings .isle-title {
+      font-size: 48px;
+      margin-top: 25px;
+  }
+
+  .headings .isle-title-text {
+      font-size: 18px;
+      margin-top: 25px;
+  }
+}
+
+.isle-title {
+  font-size: 144px;
+  text-align: right;
+  line-height: 99.19%;
+  margin-top: 110px;
+}
+
+.isle-title-text {
+  margin-top: 85px;
+  font-size: 36px;
+}
+
+.menu {
+  display: flex;
+}
+
+.title-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 88px;
+}
+
+.text-frame {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 557px;
+  border: 1px solid #0063BF;
+  text-align: center;
+  padding: 2vmax;
+  font-size: 18px;
+}
+
+.content {
+  display: inline-flexbox;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: 'Prata', serif;
+  font-size: 48px;
+  margin: 150px 0 75px 0;
+}
+
+.title-small {
+  font-family: 'Prata', serif;
+  font-size: 24px;
+  margin: 150px 0 75px 0;
+}
+
+.text {
+  margin-bottom: 36px;
+  font-size: 18px;
+}
+
+.text-padding-top {
+  padding-top: 36px;
+}
+
+@media (max-width: 768px) {
+  .title,
+  .title-small {
+      font-size: 28px;
+      margin-bottom: 30px;
+      margin-top: 70px;
+  }
+}
+
+@media (max-width: 479px) {    
+  .img-sm-p0 [class*="col"]:not(p), 
+  img {
+      padding: 0;
+      margin: 10px 0;
+  }
+}
+
+.paragraph {
+  margin-top: 100px;
+}
+
+.mt {
+  margin-top: 100px;
+}
+
+@media (max-width: 479px) {    
+  .mt {
+      margin-top: 65px;
+  }
+}
+
+.right-text {
+  padding-left: 18px;
+}
+
+footer {
+  margin-top: 200px;
+  height: 300px;
+  background-color: #0063BF;
 }
