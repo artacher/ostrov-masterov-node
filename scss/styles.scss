@@ -23,7 +23,87 @@ h1, h2, h3, h4 {
 
 @media (max-width: 768px) {
   .boxmenu {
-      padding-top: 10px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .boxmenu {
+    background-color: #0063BF;
+  }
+  .navtwo {
+    transform: translateY(-50px);
+    margin-right: 100px;
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .btn-nav {
+    display: inline-flex;
+    height: 45px;
+    font-family: 'Prata', serif;
+    font-size: 18px;
+    border: 1px solid black;
+    background: rgba(255,255,255,0);
+    color: black;
+    border-radius: 25px;
+    margin: 0px 7px;
+    padding: 0px 15px;
+    line-height: 1;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &:hover {
+      text-decoration: none;
+      color: darkgrey;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .btn-nav {
+    display: inline-flex;
+    height: 45px;
+    font-family: 'Prata', serif;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    margin: 0px 7px;
+    padding: 0px 15px;
+    line-height: 1;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &:hover {
+      text-decoration: none;
+      color: darkgrey;
+    }
+  }
+
+  .logo {
+    filter: invert(100%);
+  }
+  
+  .btn-circle {
+    width: 45px;
+    padding: 0;
+    border: 1px solid white;
+    border-radius: 25px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu-sm {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-lg {
+      display: none;
   }
 }
 
@@ -34,35 +114,16 @@ h1, h2, h3, h4 {
 
 .boxmenu .navtwo {
   display: flex;
-  margin-left: auto;
-  margin-left: 40px;
+  padding-left: 40px;
+}
+
+.navone-sm {
+  display: flex;
 }
 
 .logo {
   width: 57px;
   height: 45px;
-}
-
-.btn-nav {
-  display: inline-flex;
-  height: 45px;
-  font-family: 'Prata', serif;
-  font-size: 18px;
-  border: 1px solid black;
-  background: rgba(255,255,255,0);
-  color: black;
-  border-radius: 25px;
-  margin: 0px 7px;
-  padding: 0px 15px;
-  line-height: 1;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-
-  &:hover {
-    text-decoration: none;
-    color: darkgrey;
-  }
 }
 
 .btn-circle {
