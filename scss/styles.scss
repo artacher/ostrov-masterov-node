@@ -141,6 +141,21 @@ h1, h2, h3, h4 {
   background-position: center;
   border-radius: 25px;
   margin: 0px 30px 0px 7px;
+
+  &:hover {
+    // transition: background-position 1s ease-out;
+    background-position-x: -40px;
+    animation: mymove 10s infinite;
+  }
+}
+
+@keyframes mymove {
+  0%   {background-position-x: center;}
+  10%   {background-position-x: 10px;}
+  50%  {background-position-x: -30px;}
+  75%  {background-position-x: 50px;}
+  95%  {background-position-x: 50px;}
+  100% {background-position-x: center;}
 }
 
 .isle {
