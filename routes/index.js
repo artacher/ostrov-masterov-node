@@ -7,11 +7,15 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/history', (req, res) => {
-  res.render('history');
+  res.render('history', {
+    path: "history"
+  });
 });
 
 router.get('/contact', (req, res) => {
-  res.render('contact');
+  res.render('contact', {
+    path: 'contact'
+  });
 });
 
 module.exports = router;
