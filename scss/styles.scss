@@ -15,6 +15,10 @@ h1, h2, h3, h4 {
   font-family: 'Prata', 'Times New Roman', sans-serif;
 }
 
+.img-fluid-h {
+  height: 100%;
+}
+
 .boxmenu {
   display: flex;
   padding-top: 59px;
@@ -143,13 +147,12 @@ h1, h2, h3, h4 {
   margin: 0px 30px 0px 7px;
 
   &:hover {
-    // transition: background-position 1s ease-out;
     background-position-x: -40px;
-    animation: mymove 10s infinite;
+    animation: slide-bg-x 10s infinite;
   }
 }
 
-@keyframes mymove {
+@keyframes slide-bg-x {
   0%   {background-position-x: center;}
   10%   {background-position-x: 10px;}
   50%  {background-position-x: -30px;}
@@ -251,6 +254,12 @@ h1, h2, h3, h4 {
   text-align: center;
   padding: 2vmax;
   font-size: 18px;
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .content {
@@ -298,10 +307,6 @@ h1, h2, h3, h4 {
   }
 }
 
-.paragraph {
-  margin-top: 100px;
-}
-
 .mt {
   margin-top: 100px;
 }
@@ -310,10 +315,6 @@ h1, h2, h3, h4 {
   .mt {
       margin-top: 65px;
   }
-}
-
-.right-text {
-  padding-left: 18px;
 }
 
 footer {
