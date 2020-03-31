@@ -18,4 +18,10 @@ router.get('/contact', (req, res) => {
   });
 });
 
+router.get('/openworkshops', (req, res) => {
+  res.render('openworkshops', {
+    path: 'openworkshops'
+  });
+});
+
 module.exports = router;

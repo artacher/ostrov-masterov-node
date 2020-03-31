@@ -12,7 +12,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="my-nav">
                     <ul class="navbar-nav mt-2 mt-lg-0">
                         <div class="navone inverted">
-                            <a class="nav-item btn-nav" href="#">открытые мастерские<span class="sr-only">(current)</span></a>
+                            <a class="nav-item btn-nav" + (path === 'openworkshops' ? 'active' : '') href="/openworkshops">открытые мастерские<span class="sr-only">(current)</span></a>
                             a(class="nav-item btn-nav " + (path === 'history' ? 'active' : '') href="/history") история
                             <a class="nav-item btn-nav" href="#">современное состояние</a>
                             a(class="nav-item btn-nav " + (path === 'contact' ? 'active' : '') href="/contact") контакты
@@ -39,14 +39,14 @@
                     <div class="collapse navbar-collapse justify-content-end" id="my-nav">
                         <div class="navtwo justify-content-center">
                                 <a class="nav-item btn-nav btn-circle" href="#">eng</a>
-                                <button class="nav-item btn-color" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'light') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></button>
+                                <button class="nav-item btn-color margin-sm-btn" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'light') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></button>
                         </div>
                         <ul class="navbar-nav mt-2 mt-lg-0">
                             <div class="navone-sm row">
-                                <div class="col-12"><a class="nav-item btn-nav" href="#">открытые мастерские<span class="sr-only">(current)</span></a></div>
-                                <div class="col-12"><a class="nav-item btn-nav" href="#">история</a></div>
-                                <div class="col-12"><a class="nav-item btn-nav" href="#">современное состояние</a></div>
-                                <div class="col-12"><a class="nav-item btn-nav" href="/contact">контакты</a></div>
+                                <div class="col-12 d-flex justify-content-center"><a class="nav-item btn-nav" href="/openworkshops">открытые мастерские<span class="sr-only">(current)</span></a></div>
+                                <div class="col-12 d-flex justify-content-center"><a class="nav-item btn-nav" href="#">история</a></div>
+                                <div class="col-12 d-flex justify-content-center"><a class="nav-item btn-nav" href="#">современное состояние</a></div>
+                                <div class="col-12 d-flex justify-content-center"><a class="nav-item btn-nav" href="/contact">контакты</a></div>
                             </div>
                         </ul>    
                     </div>
