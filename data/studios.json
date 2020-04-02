@@ -1,0 +1,20 @@
+[{
+  "name": "Studio One",
+  "title": "It is an awesome studio",
+  "images": [
+    "/img/project-ostrov02.jpg",
+    "/img/project-ostrov03.jpg"
+  ]
+},
+{
+  "name": "Studio Two",
+  "title": "It is an awesome studio"
+},
+{
+  "name": "Клевая студия",
+  "title": "У нас всегда открыты двери",
+  "images": [
+    "/img/project-ostrov02.jpg",
+    "/img/project-ostrov02.jpg"
+  ]
+}]
