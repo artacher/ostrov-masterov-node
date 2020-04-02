@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  include partials/header
+  
+  .container
+    .row
+      .col
+        h2= data.workshops[0].name
+        p= data.workshops[0].description    
+
+    <div class="container">
+    <div class="row">
+      <div class="col">
+        img(src="img/zhukov01.jpg", alt="Арт-студия Влада Жукова")
+      </div>
+    </div>
+  </div>
+
+  include partials/footer
