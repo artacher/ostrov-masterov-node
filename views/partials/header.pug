@@ -12,7 +12,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="my-nav">
                     <ul class="navbar-nav mt-2 mt-lg-0">
                         <div class="navone inverted">
-                            a(class="nav-item btn-nav " + (path === 'openworkshops' ? 'active' : '') href="/openworkshops") открытые мастерские
+                            a(class="nav-item btn-nav " + (path.includes('workshop') ? 'active' : '') href="/openworkshops") открытые мастерские
                             a(class="nav-item btn-nav " + (path === 'history' ? 'active' : '') href="/history") история
                             a(class="nav-item btn-nav" href="#") современное состояние
                             a(class="nav-item btn-nav " + (path === 'contact' ? 'active' : '') href="/contact") контакты
