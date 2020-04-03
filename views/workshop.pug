@@ -2,19 +2,30 @@ extends layout
 
 block content
   include partials/header
-  
-  .container
-    .row
-      .col
-        h2= data.workshops[0].name
-        p= data.workshops[0].description    
+
+  if index !== 'error'  
+    .container
+      .row
+        .col
+          p.mt-5
+            a(href="/openworkshops") &#8592; Список мастерских
+          h2.title= data.workshops[index].name
+          p= data.workshops[index].description    
 
     <div class="container">
-    <div class="row">
-      <div class="col">
-        img(src="img/zhukov01.jpg", alt="Арт-студия Влада Жукова")
+      <div class="row">
+        <div class="col">
+          img(src=data.workshops[index].images[0], alt=data.workshops[index].description )
+        </div>
       </div>
     </div>
-  </div>
+
+  else
+    .container
+      .row
+        .col
+          p.mt-5
+          a(href="/openworkshops") &#8592; Список мастерских
+          h2.title Такого тут нет
 
   include partials/footer

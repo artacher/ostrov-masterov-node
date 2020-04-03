@@ -31,9 +31,16 @@ router.get('/openworkshops', (req, res) => {
   });
 });
 
-router.get('/workshop', (req, res) => {
+router.get('/workshop/:index', (req, res) => {
+  let index = +req.params.index - 1;
+  if (index >= data.workshops.length || index < 0) {
+    index = "error";
+  };
+  console.log(index);
+
   res.render('workshop', {
-    path: 'workshop',
+    path: 'workshop/:index',
+    index: index,
     data
   });
 });
