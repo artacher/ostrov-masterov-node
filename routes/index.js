@@ -9,7 +9,9 @@ console.log(data.workshops)
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', {
+    path: "home"
+  });
 });
 
 router.get('/history', (req, res) => {
