@@ -12,11 +12,12 @@ block content
           p= data.workshops[index].description    
 
     <div class="container">
-      <div class="row">
-        <div class="col">
-          img(src=data.workshops[index].images[0], alt=data.workshops[index].description )
+      each image, img_index in data.workshops[index].images 
+        <div class="row">
+          <div class="col text-center text-padding-top">
+              img.img-fluid(src=data.workshops[index].images[img_index+1], alt=data.workshops[index].title )
+          </div>
         </div>
-      </div>
     </div>
 
   else
