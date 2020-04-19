@@ -324,10 +324,15 @@ h1, h2, h3, h4 {
 }
 
 footer {
-  margin-top: 200px;
-  height: 300px;
+  margin-top: 130px;
   background-color: #0063BF;
+  color: white;
+  p {
+    margin: 0;
+    padding: 55px 0;
+  }
 }
+
 
 .text-title-workshop {
   margin-bottom: 5vw;
@@ -348,3 +353,4 @@ footer {
   font-family: 'Roboto', 'Times New Roman', sans-serif ;
   font-size: 18px;
 }
+
