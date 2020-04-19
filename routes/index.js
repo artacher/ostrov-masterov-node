@@ -9,7 +9,9 @@ console.log(data.workshops)
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', {
+    path: "home"
+  });
 });
 
 router.get('/history', (req, res) => {
@@ -31,9 +33,16 @@ router.get('/openworkshops', (req, res) => {
   });
 });
 
-router.get('/workshop', (req, res) => {
+router.get('/workshop/:index', (req, res) => {
+  let index = +req.params.index - 1;
+  if (index >= data.workshops.length || index < 0) {
+    index = "error";
+  };
+  console.log(index);
+
   res.render('workshop', {
-    path: 'workshop',
+    path: 'workshop/:index',
+    index: index,
     data
   });
 });

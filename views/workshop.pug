@@ -2,7 +2,6 @@ extends layout
 
 block content
   include partials/header
-  
   if index !== 'error'  
     .container
       .row
@@ -10,14 +9,22 @@ block content
           p.mt-5
             a(href="/openworkshops") &#8592; Список мастерских
           h2.title= data.workshops[index].name
-          p= data.workshops[index].description     
+          p= data.workshops[index].description    
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        img(src=data.workshops[index].images[0], alt=data.workshops[index].description)
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          img(src=data.workshops[index].images[0], alt=data.workshops[index].description )
+        </div>
       </div>
     </div>
-  </div>
+
+  else
+    .container
+      .row
+        .col
+          p.mt-5
+          a(href="/openworkshops") &#8592; Список мастерских
+          h2.title Такого тут нет
 
   include partials/footer
