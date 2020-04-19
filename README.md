@@ -1,14 +1,11 @@
-# simple-express-site
-Simple static website foundation built with ExpressJS, Pug, Sass
+# Остров Мастеров
 
-How to get going:
+Simple static website built with ExpressJS, Pug, Sass
 
-`git clone https://github.com/vmyazin/simple-express-site.git`
-
-`cd simple-express-site`
-
+Обновить модули Node:
 `npm i`
 
+Запустить сервер:
 `npm start`
 
 Proceed to http://localhost:3500
