@@ -11,14 +11,14 @@ block content
           h2.title= data.workshops[index].name
           p= data.workshops[index].description    
 
-    <div class="container">
-      each image, img_index in data.workshops[index].images 
-        <div class="row">
-          <div class="col text-center text-padding-top">
-              img.img-fluid(src=data.workshops[index].images[img_index+1], alt=data.workshops[index].title )
-          </div>
-        </div>
-    </div>
+    .container
+      each image, img_index in data.workshops[index].images
+        //- если порядковый номер элемента больше ноля, то вывести картинку (пропускаем первый элемент)
+        - if (img_index > 0)
+          .row
+            .col.text-center.text-padding-top
+              =img_index
+              img.img-fluid(src=data.workshops[index].images[img_index], alt=data.workshops[index].title)
 
   else
     .container
